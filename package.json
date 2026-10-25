@@ -1,0 +1,48 @@
+{
+  "name": "dsh-fish-suite",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "鱼记忆 + 心情合并插件：左侧主导航页面，只对选中的会话和启用的工作区生效。",
+  "license": "MIT",
+  "author": "Krichy07",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krichy07/dsh-fish-suite.git"
+  },
+  "homepage": "https://github.com/Krichy07/dsh-fish-suite#readme",
+  "bugs": {
+    "url": "https://github.com/Krichy07/dsh-fish-suite/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "fish-memory",
+    "mood"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "vendor/**"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

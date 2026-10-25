@@ -1,0 +1,8 @@
+node_modules/
+release/*.tgz
+release/*.txt
+release/*.json
+release/*.log
+*.log
+fish-suite-local.json
+data/
